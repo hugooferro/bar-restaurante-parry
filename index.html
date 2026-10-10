@@ -1,0 +1,1749 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Descubre la carta, la terraza y cómo llegar al Bar Restaurante Mesón Parry, en C. Cazorla, 10, Pinos Puente, Granada.">
+  <meta name="keywords" content="Bar Restaurante Mesón Parry, restaurante en Pinos Puente, bar restaurante Granada, cocina española Pinos Puente, Mesón Parry">
+  <meta name="theme-color" content="#171b18">
+  <meta property="og:title" content="Bar Restaurante Mesón Parry | Pinos Puente, Granada">
+  <meta property="og:description" content="Cocina española, platos para compartir y terraza en C. Cazorla, 10, Pinos Puente.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="mesa-4.jpg">
+  <title>Bar Restaurante Mesón Parry | Pinos Puente, Granada</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Bar Restaurante Mesón Parry",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C. Cazorla, 10",
+        "postalCode": "18240",
+        "addressLocality": "Pinos Puente",
+        "addressRegion": "Granada",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34607730571",
+      "servesCuisine": "Cocina española"
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3f0e9;
+      --paper: #faf9f6;
+      --cream: #e9e5dc;
+      --forest: #202923;
+      --forest-2: #334239;
+      --sage: #657365;
+      --gold: #c84d37;
+      --gold-soft: #f1b7a2;
+      --terracotta: #a94332;
+      --text: #20231f;
+      --muted: #62665f;
+      --line: rgba(32, 41, 35, 0.16);
+      --white: #ffffff;
+      --shadow-soft: 0 24px 64px rgba(24, 29, 25, 0.14);
+      --shadow-card: 0 14px 36px rgba(24, 29, 25, 0.08);
+      --radius-xl: 4px;
+      --radius-lg: 3px;
+      --radius-md: 2px;
+      --container: min(1280px, calc(100% - 48px));
+      --transition: 240ms ease;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Manrope', sans-serif;
+      color: var(--text);
+      background: var(--paper);
+      line-height: 1.7;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(201, 152, 77, 0.9);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: var(--container);
+      margin: 0 auto;
+    }
+
+    .eyebrow,
+    .section-kicker {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--terracotta);
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 0.96;
+      margin: 0;
+      letter-spacing: -0.04em;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: clamp(2.7rem, 5vw, 4.4rem);
+    }
+
+    h3 {
+      font-size: clamp(1.8rem, 2.3vw, 2.5rem);
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .btn {
+      --btn-bg: var(--gold);
+      --btn-fg: var(--forest);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+      padding: 0.95rem 1.55rem;
+      min-height: 52px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      background: var(--btn-bg);
+      color: var(--btn-fg);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
+      box-shadow: 0 10px 24px rgba(201, 152, 77, 0.18);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .btn:hover::before,
+    .btn:focus-visible::before {
+      opacity: 1;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(201, 152, 77, 0.22);
+    }
+
+    .btn--light {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.28);
+      color: var(--white);
+      box-shadow: none;
+    }
+
+    .btn--light:hover,
+    .btn--light:focus-visible {
+      background: rgba(255,255,255,0.14);
+      box-shadow: none;
+    }
+
+    .btn--dark {
+      background: var(--forest);
+      color: var(--white);
+      box-shadow: 0 14px 26px rgba(22, 61, 58, 0.18);
+    }
+
+    .btn--ghost {
+      background: transparent;
+      color: var(--forest);
+      border-color: rgba(22, 61, 58, 0.2);
+      box-shadow: none;
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 50;
+      transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition), border-color var(--transition);
+      border-bottom: 1px solid transparent;
+    }
+
+    .site-header.is-scrolled {
+      background: rgba(15, 35, 35, 0.72);
+      backdrop-filter: blur(16px);
+      border-color: rgba(255,255,255,0.08);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 82px;
+      position: relative;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--white);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.2rem, 1.8vw, 1.7rem);
+      letter-spacing: -0.02em;
+      z-index: 2;
+    }
+
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid rgba(201, 152, 77, 0.9);
+      color: var(--gold-soft);
+      font-size: 0.76rem;
+      font-weight: 800;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(0.8rem, 1.3vw, 1.8rem);
+      font-size: 0.82rem;
+      letter-spacing: 0.02em;
+      font-weight: 600;
+      color: rgba(255,255,255,0.84);
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 0.2rem 0;
+      transition: opacity var(--transition), color var(--transition);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--white);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a:focus-visible::after {
+      transform: scaleX(1);
+    }
+
+    .nav-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: var(--white);
+      font-size: 1.8rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0.35rem 0.5rem;
+      z-index: 2;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(10, 19, 18, 0.83) 0%, rgba(10, 19, 18, 0.7) 36%, rgba(10, 19, 18, 0.25) 100%),
+        url('fachada-parry.jpg') center/cover no-repeat;
+      color: var(--white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 140px;
+      background: linear-gradient(180deg, rgba(10,19,18,0), rgba(10,19,18,0.18));
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 78% 24%, rgba(232,195,140,0.16), transparent 36%),
+        linear-gradient(180deg, rgba(13,34,32,0.08), transparent 48%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      padding: 140px 0 72px;
+      max-width: 700px;
+    }
+
+    .hero__eyebrow {
+      display: inline-block;
+      font-size: 0.73rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.76);
+      margin-bottom: 1.25rem;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: fadeUp 0.8s ease 0.12s forwards;
+    }
+
+    .hero h1 {
+      font-size: clamp(3.5rem, 7vw, 7rem);
+      line-height: 0.9;
+      margin-bottom: 1.2rem;
+      max-width: 700px;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: fadeUp 0.8s ease 0.28s forwards;
+    }
+
+    .hero-copy {
+      max-width: 560px;
+      font-size: clamp(1.02rem, 1.9vw, 1.2rem);
+      color: rgba(255,255,255,0.74);
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: fadeUp 0.8s ease 0.44s forwards;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 2.4rem;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: fadeUp 0.8s ease 0.6s forwards;
+    }
+
+    .hero-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: rgba(255,255,255,0.72);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: fadeUp 0.8s ease 0.78s forwards;
+    }
+
+    .hero-meta::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold-soft);
+      box-shadow: 0 0 0 5px rgba(201, 152, 77, 0.15);
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.65rem;
+      color: rgba(255,255,255,0.72);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.8;
+      animation: floatScroll 2.2s ease-in-out infinite;
+    }
+
+    .scroll-indicator span {
+      width: 1px;
+      height: 36px;
+      background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    }
+
+    .section {
+      padding: clamp(4.25rem, 8vw, 7rem) 0;
+    }
+
+    .intro {
+      background: var(--bg);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      align-items: end;
+      gap: clamp(1.7rem, 4vw, 3rem);
+    }
+
+    .intro-quote {
+      position: relative;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .intro-quote span {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 5vw, 5rem);
+      color: var(--forest);
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+    }
+
+    .intro-copy {
+      max-width: 760px;
+    }
+
+    .intro-copy p {
+      color: var(--muted);
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+    }
+
+    .intro-copy p + p {
+      margin-top: 1.2rem;
+    }
+
+    .about {
+      background: linear-gradient(180deg, var(--paper) 0%, var(--bg) 100%);
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: clamp(1.5rem, 3vw, 2.6rem);
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+      padding: 1rem;
+    }
+
+    .about-visual .photo-main {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      height: clamp(360px, 45vw, 600px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-visual .photo-card {
+      position: absolute;
+      right: 0;
+      bottom: -1.6rem;
+      width: min(52%, 260px);
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(24,61,61,0.08);
+      border-radius: 18px;
+      padding: 1rem 1rem 0.9rem;
+      box-shadow: var(--shadow-card);
+      z-index: 2;
+    }
+
+    .photo-card .small-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+
+    .photo-card strong {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.5rem, 2vw, 2rem);
+      color: var(--forest);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .about-copy {
+      display: grid;
+      gap: 1.4rem;
+    }
+
+    .about-copy .lede {
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .about-signature {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-top: 1.1rem;
+      border-top: 1px solid var(--line);
+      margin-top: 0.6rem;
+    }
+
+    .about-signature .sig {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      color: var(--forest);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .menu-wrap {
+      background: var(--paper);
+    }
+
+    .heading-row {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1.3rem;
+      margin-bottom: 2.7rem;
+    }
+
+    .heading-row p {
+      max-width: 420px;
+      color: var(--muted);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+
+    .menu-card {
+      position: relative;
+      background: linear-gradient(180deg, rgba(242,234,220,0.9), rgba(255,255,255,0.8));
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.45rem 1.4rem 1.15rem;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+    }
+
+    .menu-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-card);
+      background: rgba(242,234,220,1);
+    }
+
+    .menu-card__index {
+      display: inline-block;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+
+    .menu-card h3 {
+      margin-bottom: 0.8rem;
+      color: var(--forest);
+    }
+
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0;
+    }
+
+    .menu-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.8rem 0 0.7rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .menu-list li::before {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .menu-note {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .gallery-band {
+      background: var(--forest);
+      color: var(--white);
+    }
+
+    .gallery-band .heading-row p {
+      color: rgba(255,255,255,0.68);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.8fr 0.8fr 0.8fr;
+      grid-auto-rows: 220px;
+      gap: 0.9rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.06);
+      cursor: pointer;
+      box-shadow: 0 16px 34px rgba(0,0,0,0.18);
+    }
+
+    .gallery-item:nth-child(1) {
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      transition: transform 450ms ease, filter 450ms ease;
+    }
+
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22));
+      transition: opacity var(--transition);
+    }
+
+    .gallery-item:hover img,
+    .gallery-item:focus-visible img {
+      transform: scale(1.04);
+      filter: saturate(1.08);
+    }
+
+    .gallery-item:hover::after,
+    .gallery-item:focus-visible::after {
+      opacity: 0.7;
+    }
+
+    .experience {
+      background: linear-gradient(180deg, #f9f5ef 0%, #f1e8dc 100%);
+    }
+
+    .experience-box {
+      background: rgba(255,255,255,0.4);
+      border: 1px solid rgba(24,61,61,0.08);
+      border-radius: var(--radius-xl);
+      padding: clamp(1.5rem, 4vw, 3rem);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.6rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .experience-box__content {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .experience-box__content p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .experience-pillar {
+      display: grid;
+      gap: 1.2rem;
+      align-content: center;
+    }
+
+    .experience-pillar .tag {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 0.6rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(22,61,58,0.06);
+      border: 1px solid rgba(22,61,58,0.08);
+      color: var(--forest);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .experience-pillar strong {
+      display: block;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 0.9;
+      color: var(--forest);
+      letter-spacing: -0.04em;
+    }
+
+    .contact-section {
+      background: var(--paper);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: clamp(1.5rem, 4vw, 3rem);
+      align-items: center;
+    }
+
+    .contact-copy {
+      display: grid;
+      gap: 1.4rem;
+    }
+
+    .contact-list {
+      display: grid;
+      border-top: 1px solid var(--line);
+      margin-top: 0.5rem;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(201, 152, 77, 0.12);
+      color: var(--terracotta);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .contact-row strong {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--forest);
+      margin-bottom: 0.3rem;
+      font-weight: 800;
+    }
+
+    .contact-row span,
+    .contact-row a {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.8rem;
+    }
+
+    .map-wrap {
+      position: relative;
+      min-height: 470px;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(22,61,58,0.12);
+      box-shadow: var(--shadow-card);
+      background: #ddd;
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 470px;
+      border: 0;
+      display: block;
+      filter: saturate(0.8) contrast(1.1);
+    }
+
+    .map-pin {
+      position: absolute;
+      top: 1.25rem;
+      left: 1.25rem;
+      z-index: 1;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      padding: 0.9rem 1rem;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(12px);
+      border-radius: 14px;
+      border: 1px solid rgba(22,61,58,0.08);
+      box-shadow: 0 18px 30px rgba(13,31,28,0.09);
+    }
+
+    .map-pin strong {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.55rem;
+      line-height: 0.95;
+      color: var(--forest);
+      letter-spacing: -0.04em;
+    }
+
+    .map-pin span {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .cta-band {
+      background: linear-gradient(135deg, var(--terracotta) 0%, #c97d5b 100%);
+      color: var(--white);
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: clamp(2rem, 4vw, 3.5rem) 0;
+    }
+
+    .cta-text {
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .cta-text p {
+      color: rgba(255,255,255,0.8);
+      max-width: 500px;
+    }
+
+    .footer {
+      background: #112d2d;
+      color: rgba(255,255,255,0.76);
+      padding: 1.45rem 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+    }
+
+    .footer-brand {
+      color: var(--white);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      letter-spacing: -0.04em;
+    }
+
+    .wa-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #2ed46a 0%, #25d366 100%);
+      box-shadow: 0 18px 30px rgba(37, 211, 102, 0.26);
+      z-index: 60;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .wa-float:hover,
+    .wa-float:focus-visible {
+      transform: scale(1.08);
+      box-shadow: 0 22px 35px rgba(37, 211, 102, 0.35);
+    }
+
+    .wa-float svg {
+      width: 26px;
+      height: 26px;
+      fill: var(--white);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 700ms ease, transform 700ms ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 19, 18, 0.82);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 80;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 220ms ease, visibility 220ms ease;
+      padding: 2rem;
+    }
+
+    .lightbox.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox__inner {
+      position: relative;
+      max-width: min(980px, 92vw);
+      width: 100%;
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.04);
+      box-shadow: 0 30px 70px rgba(0,0,0,0.3);
+    }
+
+    .lightbox__inner img {
+      display: block;
+      width: 100%;
+      max-height: 84vh;
+      object-fit: contain;
+      background: #111;
+    }
+
+    .lightbox__close {
+      position: absolute;
+      top: 0.8rem;
+      right: 0.8rem;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: var(--white);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatScroll {
+      0%, 100% { transform: translateY(0); opacity: 0.7; }
+      50% { transform: translateY(8px); opacity: 1; }
+    }
+
+    @media (max-width: 900px) {
+      .menu-grid,
+      .contact-grid,
+      .about-layout,
+      .rating-wrap,
+      .experience-box,
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: 200px;
+      }
+
+      .gallery-item:nth-child(1) {
+        grid-column: span 2;
+      }
+
+      .cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav-toggle {
+        display: inline-flex;
+      }
+
+      .nav-links {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+        padding: 0.7rem 0 1rem;
+        background: rgba(15, 35, 35, 0.9);
+        backdrop-filter: blur(14px);
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+
+      .nav-links.is-open {
+        display: flex;
+      }
+
+      .nav-links a {
+        width: 100%;
+        padding: 0.8rem 0;
+      }
+
+      .nav {
+        min-height: 72px;
+      }
+
+      .scroll-indicator {
+        display: none;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero-inner {
+        padding-top: 120px;
+      }
+
+      .hero { min-height: 92vh; }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item:nth-child(1) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      .wa-float {
+        right: 16px;
+        bottom: 16px;
+      }
+
+      .map-wrap,
+      .map-wrap iframe {
+        min-height: 340px;
+      }
+
+      .brand {
+        max-width: 70%;
+        line-height: 1;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+    }
+
+    *, *::before, *::after { letter-spacing: 0 !important; }
+
+    .container { width: var(--container); }
+
+    h2 { font-size: 3.75rem; line-height: 0.98; }
+    h3 { font-size: 2.15rem; line-height: 1; }
+
+    .btn {
+      min-height: 50px;
+      padding: 0.85rem 1.25rem;
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+    }
+
+    .btn:hover,
+    .btn:focus-visible { transform: translateY(-2px); box-shadow: none; }
+    .btn:active { transform: translateY(0); }
+    .btn::before { display: none; }
+    .btn--dark { background: var(--forest); }
+    .btn--ghost { border-color: var(--forest); }
+
+    .site-header.is-scrolled { background: rgba(25, 30, 26, 0.94); }
+    .brand { font-size: 1.55rem; }
+    .brand-mark { border-radius: 0; width: 32px; height: 32px; }
+    .nav { min-height: 86px; }
+    .nav-links { gap: 1.35rem; }
+    .nav-toggle { font-size: 1.5rem; }
+
+    .hero {
+      min-height: 760px;
+      min-height: max(700px, 100svh);
+      background: #202923;
+    }
+
+    .hero__image {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 56%;
+      animation: hero-appear 1.1s ease-out both;
+    }
+
+    .hero::before {
+      inset: 0;
+      height: auto;
+      background: linear-gradient(90deg, rgba(16, 20, 17, 0.82) 0%, rgba(16, 20, 17, 0.62) 44%, rgba(16, 20, 17, 0.08) 100%);
+    }
+
+    .hero::after {
+      background: linear-gradient(0deg, rgba(13, 17, 14, 0.44), transparent 40%);
+    }
+
+    .hero-inner { max-width: 820px; padding-top: 150px; padding-bottom: 100px; }
+    .hero__eyebrow { font-size: 0.78rem; }
+    .hero h1 { font-size: 7rem; line-height: 0.9; max-width: 760px; }
+    .hero-copy { font-size: 1.15rem; max-width: 520px; }
+    .hero-meta { font-size: 0.77rem; }
+    .scroll-indicator { bottom: 28px; }
+
+    .section { padding: 7rem 0; }
+    .intro { background: var(--bg); }
+    .intro-quote { border-color: var(--gold); }
+    .intro-quote span { font-size: 4.2rem; line-height: 0.94; }
+    .intro-copy p,
+    .about-copy .lede,
+    .experience-box__content p { font-size: 1.03rem; }
+    .about { background: var(--paper); }
+    .about-visual { padding: 0 1rem 0 0; }
+    .about-visual .photo-main { border-radius: 0; box-shadow: none; height: 560px; }
+    .about-visual .photo-main img { object-position: center 54%; }
+    .about-visual .photo-card {
+      right: -1rem;
+      bottom: -1rem;
+      border-radius: 0;
+      background: var(--paper);
+      backdrop-filter: none;
+      box-shadow: none;
+      border: 0;
+      border-left: 2px solid var(--gold);
+    }
+    .about-copy { gap: 1.1rem; }
+    .about-signature { border-color: var(--gold); }
+
+    .heading-row { margin-bottom: 2.4rem; }
+    .heading-row p { max-width: 400px; }
+    .menu-grid { column-gap: 2.4rem; row-gap: 1.1rem; }
+    .menu-card {
+      padding: 1.4rem 0 0.8rem;
+      border: 0;
+      border-top: 1px solid var(--line);
+      border-radius: 0;
+      background: transparent;
+      transition: border-color var(--transition);
+    }
+    .menu-card:hover { transform: none; box-shadow: none; background: transparent; border-color: var(--gold); }
+    .menu-card__index { color: var(--terracotta); }
+    .menu-card h3 { color: var(--text); }
+    .menu-list li::before { border-radius: 0; background: var(--gold); }
+    .menu-note { font-size: 0.78rem; }
+
+    .gallery-band { background: var(--forest); }
+    .gallery-band .section-kicker { color: var(--gold-soft); }
+    .gallery-grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-auto-rows: 76px;
+      gap: 12px;
+    }
+    .gallery-item {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      background: var(--forest-2);
+      cursor: zoom-in;
+    }
+    .gallery-item:nth-child(1) { grid-column: 1 / 7; grid-row: 1 / 7; }
+    .gallery-item:nth-child(2) { grid-column: 7 / 10; grid-row: 1 / 4; }
+    .gallery-item:nth-child(3) { grid-column: 10 / 13; grid-row: 1 / 4; }
+    .gallery-item:nth-child(4) { grid-column: 7 / 10; grid-row: 4 / 7; }
+    .gallery-item:nth-child(5) { grid-column: 10 / 13; grid-row: 4 / 7; }
+    .gallery-item:nth-child(1) img { object-position: center 54%; }
+    .gallery-item:nth-child(2) img { object-position: center 46%; }
+    .gallery-item:nth-child(3) img { object-position: center 55%; }
+    .gallery-item:nth-child(4) img { object-position: center 52%; }
+    .gallery-item:nth-child(5) img { object-position: center 48%; }
+    .gallery-item::after { background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, 0.18)); }
+    .gallery-item:hover img,
+    .gallery-item:focus-visible img { transform: scale(1.035); }
+
+    .experience { background: var(--bg); }
+    .experience-box {
+      padding: 0;
+      gap: 3rem;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+    .experience-pillar { border-left: 1px solid var(--gold); padding: 1rem 0 1rem 2rem; }
+    .experience-pillar .tag { padding: 0; border: 0; border-radius: 0; background: transparent; color: var(--terracotta); }
+    .experience-pillar strong { font-size: 3.8rem; }
+
+    .contact-icon { width: 36px; height: 36px; border-radius: 0; background: var(--bg); }
+    .map-wrap,
+    .map-wrap iframe { border-radius: 0; box-shadow: none; }
+    .map-wrap { border: 0; }
+    .map-pin { border-radius: 0; }
+    .contact-actions { gap: 0.55rem; }
+    .cta-band { background: var(--forest); }
+    .cta-band .section-kicker { color: var(--gold-soft) !important; }
+    .footer { background: #171b18; }
+    .wa-float { border-radius: 50%; }
+
+    .lightbox { padding: 1rem; }
+    .lightbox__inner { border-radius: 0; box-shadow: none; }
+    .lightbox__close { border-radius: 0; }
+
+    @keyframes hero-appear {
+      from { opacity: 0.72; transform: scale(1.025); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 900px) {
+      h2 { font-size: 3.25rem; }
+      .hero h1 { font-size: 5.5rem; }
+      .hero { min-height: max(680px, 92svh); }
+      .gallery-grid { grid-auto-rows: 64px; }
+      .gallery-item:nth-child(1) { grid-column: 1 / 7; grid-row: 1 / 7; }
+      .gallery-item:nth-child(2) { grid-column: 7 / 13; grid-row: 1 / 4; }
+      .gallery-item:nth-child(3) { grid-column: 7 / 10; grid-row: 4 / 7; }
+      .gallery-item:nth-child(4) { grid-column: 10 / 13; grid-row: 4 / 7; }
+      .gallery-item:nth-child(5) { grid-column: 1 / 13; grid-row: 7 / 10; }
+      .about-visual .photo-main { height: 500px; }
+    }
+
+    @media (max-width: 720px) {
+      :root { --container: min(540px, calc(100% - 36px)); }
+      .nav { min-height: 72px; }
+      .nav-links {
+        padding: 0.6rem 1.1rem 1rem;
+        background: rgba(25, 30, 26, 0.97);
+      }
+      .nav-links a { min-height: 44px; }
+      .hero::before { background: linear-gradient(90deg, rgba(16, 20, 17, 0.8), rgba(16, 20, 17, 0.3)); }
+      .hero-inner { padding-top: 130px; padding-bottom: 90px; }
+      .hero h1 { font-size: 4.5rem; }
+      .hero-copy { font-size: 1.05rem; }
+      .hero-meta { flex-wrap: wrap; }
+      .section { padding: 5.25rem 0; }
+      .intro-grid { gap: 1.5rem; }
+      .intro-quote { padding-top: 1.3rem; }
+      .intro-quote span { font-size: 3.4rem; }
+      .about-visual { padding-right: 0.8rem; }
+      .about-visual .photo-main { height: 430px; }
+      .about-visual .photo-card { right: -0.8rem; bottom: -1.2rem; }
+      .experience-pillar { padding-left: 1.2rem; }
+      .experience-pillar strong { font-size: 3.2rem; }
+      .gallery-grid { grid-auto-rows: 56px; gap: 8px; }
+    }
+
+    @media (max-width: 560px) {
+      h2 { font-size: 2.75rem; }
+      h3 { font-size: 1.9rem; }
+      .hero { min-height: max(680px, 92svh); }
+      .hero h1 { font-size: 3.8rem; }
+      .hero-actions { max-width: 340px; }
+      .hero-actions .btn { width: auto; }
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 165px; }
+      .gallery-item:nth-child(1) { grid-column: 1 / 3; grid-row: auto; height: 250px; }
+      .gallery-item:nth-child(2) { grid-column: 1 / 2; grid-row: auto; }
+      .gallery-item:nth-child(3) { grid-column: 2 / 3; grid-row: auto; }
+      .gallery-item:nth-child(4) { grid-column: 1 / 2; grid-row: auto; }
+      .gallery-item:nth-child(5) { grid-column: 2 / 3; grid-row: auto; }
+      .about-visual .photo-main { height: 360px; }
+      .about-visual .photo-card { width: min(68%, 250px); }
+      .contact-actions .btn { width: 100%; }
+      .map-wrap,
+      .map-wrap iframe { min-height: 360px; }
+      .footer-inner { align-items: flex-start; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero__image { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Mesón Parry inicio">
+        <span class="brand-mark">P</span>
+        <span>Mesón Parry</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primaryNav">☰</button>
+
+      <nav class="nav-links" id="primaryNav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#carta">Carta</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-label="Portada del restaurante">
+      <img class="hero__image" src="mesa-4.jpg" alt="Huevos rotos con jamón, una de las especialidades de la casa" fetchpriority="high">
+      <div class="container hero-inner">
+        <span class="hero__eyebrow">Cocina española · Pinos Puente</span>
+        <h1>Mesón Parry</h1>
+        <p class="hero-copy">Platos para compartir, cocina española y una mesa abierta en Pinos Puente.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#carta" aria-label="Descubrir la carta del restaurante">Descubrir la carta <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&query=Bar+Restaurante+Mes%C3%B3n+Parry%2C+C.+Cazorla+10%2C+Pinos+Puente%2C+Granada" target="_blank" rel="noopener" aria-label="Cómo llegar al restaurante">Cómo llegar <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta">C. Cazorla, 10 <span aria-hidden="true">·</span> 18240 Pinos Puente</div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span></span>
+        Scroll
+      </div>
+    </section>
+
+    <section class="section intro" aria-label="Introducción">
+      <div class="container intro-grid reveal">
+        <div class="intro-quote">
+          <span>Pequeños<br>momentos.<br>Buen<br>producto.<br>Una mesa.</span>
+        </div>
+
+        <div class="intro-copy">
+          <span class="section-kicker">En Pinos Puente</span>
+          <p>Una carta de cocina española para pedir al centro, compartir y alargar la sobremesa. Mesón Parry está en la calle Cazorla, con terraza y platos que van de los caracoles y las croquetas a los huevos rotos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="nosotros" aria-label="Sobre nosotros">
+      <div class="container about-layout reveal">
+        <div class="about-visual">
+          <div class="photo-main">
+            <img src="terraza-parry.jpg" alt="Terraza del restaurante Mesón Parry con mesas y ambiente exterior">
+          </div>
+          <div class="photo-card" aria-label="Detalle del restaurante">
+            <div class="small-label">Pinos Puente · Granada</div>
+            <strong>La terraza<br>de Mesón Parry.</strong>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <span class="section-kicker">Sobre nosotros</span>
+          <h2>Cocina de aquí,<br>mesa compartida.</h2>
+          <p class="lede">Una dirección local para disfrutar de recetas españolas, raciones al centro y una terraza al aire libre.</p>
+          <p>En la carta conviven clásicos para compartir, carnes, pescado frito y ensaladas. Consulta en el local la disponibilidad y los precios.</p>
+
+          <div class="about-signature">
+            <div class="sig">Mesón Parry</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-wrap" id="carta" aria-label="Carta del restaurante">
+      <div class="container">
+        <div class="heading-row reveal">
+          <div>
+            <span class="section-kicker">Carta</span>
+            <h2>Nuestra carta</h2>
+          </div>
+          <p>Una selección de platos de la casa, organizada para elegir sin prisa y compartir en la mesa.</p>
+        </div>
+
+        <div class="menu-grid reveal">
+          <article class="menu-card">
+            <span class="menu-card__index">01</span>
+            <h3>Para compartir</h3>
+            <ul class="menu-list">
+              <li>Croquetas de rabo de toro</li>
+              <li>Caracoles</li>
+              <li>Torreznos de Soria</li>
+              <li>Calamares fritos</li>
+              <li>Cazón</li>
+              <li>Ancas de rana</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <span class="menu-card__index">02</span>
+            <h3>Especialidades</h3>
+            <ul class="menu-list">
+              <li>Flamenquín cordobés</li>
+              <li>Flamenquín cordobés trinchado</li>
+              <li>Huevos rotos</li>
+              <li>Carne en salsa</li>
+              <li>Careta y pollo a la brasa</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <span class="menu-card__index">03</span>
+            <h3>Pescados</h3>
+            <ul class="menu-list">
+              <li>Fritura de pescado</li>
+              <li>Fritura individual</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <span class="menu-card__index">04</span>
+            <h3>Ensaladas</h3>
+            <ul class="menu-list">
+              <li>Ensalada César</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="menu-note reveal">Consulta disponibilidad y precios en el establecimiento.</div>
+      </div>
+    </section>
+
+    <section class="section gallery-band" id="galeria" aria-label="Galería del restaurante">
+      <div class="container">
+        <div class="heading-row reveal">
+          <div>
+            <span class="section-kicker">Galería</span>
+            <h2>Un vistazo a la mesa.</h2>
+          </div>
+          <p>La terraza, la mesa y algunos platos de la carta.</p>
+        </div>
+
+        <div class="gallery-grid reveal" aria-label="Galería de imágenes del restaurante">
+          <button class="gallery-item" type="button" data-image="fachada-parry.jpg" data-alt="Fachada amarilla del Bar Restaurante Mesón Parry en Pinos Puente">
+            <img src="fachada-parry.jpg" alt="Fachada del Bar Restaurante Mesón Parry" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item" type="button" data-image="mesa-1.jpg" data-alt="Caracoles guisados servidos en cazuela de barro">
+            <img src="mesa-1.jpg" alt="Caracoles guisados en cazuela de barro" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item" type="button" data-image="mesa-2.jpg" data-alt="Arroz servido junto a una cerveza en una mesa del restaurante">
+            <img src="mesa-2.jpg" alt="Arroz y cerveza servidos en la mesa" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item" type="button" data-image="mesa-3.jpg" data-alt="Habas salteadas con jamón servidas en plato blanco">
+            <img src="mesa-3.jpg" alt="Habas con jamón" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item" type="button" data-image="mesa-5.jpg" data-alt="Tarta de chocolate y tarta de manzana con nata">
+            <img src="mesa-5.jpg" alt="Tartas de chocolate y manzana con nata" loading="lazy" decoding="async">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" aria-label="Experiencia del restaurante">
+      <div class="container">
+        <div class="experience-box reveal">
+          <div class="experience-box__content">
+            <span class="section-kicker">Para compartir</span>
+            <h2>Una carta que invita al centro.</h2>
+            <p>Croquetas, caracoles, torreznos y calamares abren la mesa. Después, flamenquín, carne en salsa o pescado frito: platos de cocina española para elegir a gusto.</p>
+          </div>
+
+          <div class="experience-pillar">
+            <span class="tag">Mesón Parry</span>
+            <strong>En Pinos<br>Puente.</strong>
+            <p>C. Cazorla, 10 · 18240 Pinos Puente</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto" aria-label="Contacto y ubicación">
+      <div class="container contact-grid reveal">
+        <div class="contact-copy">
+          <div>
+            <span class="section-kicker">Contacto</span>
+            <h2>Encuéntranos<br>en Pinos Puente.</h2>
+          </div>
+
+          <div class="contact-list">
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">⌂</div>
+              <div>
+                <strong>Dirección</strong>
+                <span>Bar Restaurante Mesón Parry<br>C. Cazorla, 10<br>18240 Pinos Puente, Granada</span>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">☎</div>
+              <div>
+                <strong>Teléfono</strong>
+                <a href="tel:+34607730571" aria-label="Llamar al restaurante">607 73 05 71</a>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">⏱</div>
+              <div>
+                <strong>Horario</strong>
+                <span>Consulta el horario actualizado antes de venir.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn" href="tel:+34607730571" aria-label="Llamar al restaurante">Llamar</a>
+            <a class="btn btn--ghost" href="https://wa.me/34607730571" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">WhatsApp</a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=Bar+Restaurante+Mes%C3%B3n+Parry%2C+C.+Cazorla+10%2C+Pinos+Puente%2C+Granada" target="_blank" rel="noopener" aria-label="Cómo llegar en Google Maps">Cómo llegar</a>
+          </div>
+        </div>
+
+        <div class="map-wrap" aria-label="Mapa del restaurante">
+          <div class="map-pin">
+            <strong>Mesón Parry</strong>
+            <span>Pinos Puente</span>
+          </div>
+          <iframe title="Mapa de Bar Restaurante Mesón Parry" loading="lazy" src="https://www.google.com/maps?q=Bar%20Restaurante%20Mes%C3%B3n%20Parry%2C%20C.%20Cazorla%2010%2C%20Pinos%20Puente%2C%20Granada&output=embed" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-label="Cierre promocional">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <span class="section-kicker" style="color: rgba(255,255,255,0.8);">Mesón Parry · Pinos Puente</span>
+          <h2>Nos vemos a la mesa.</h2>
+          <p>Llama para consultar disponibilidad y hacer tu reserva.</p>
+        </div>
+
+        <a class="btn btn--light" href="tel:+34607730571" aria-label="Reservar mesa por teléfono">Reservar mesa <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">Mesón Parry</div>
+      <div>C. Cazorla, 10 · 18240 Pinos Puente · Granada · 607 73 05 71</div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/34607730571" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M19.11 4.89A9.98 9.98 0 0 0 3.56 15.5L2.5 21l5.65-1.48A9.95 9.95 0 1 0 19.11 4.89Zm-5.06 14.7c-1.52 0-3.02-.41-4.34-1.18l-.31-.18-3.35.88.9-3.27-.2-.34A8.1 8.1 0 1 1 14.05 19.59Zm4.45-6.04c-.24-.12-1.43-.7-1.66-.78-.22-.09-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.31.98 2.47c.12.16 1.68 2.57 4.07 3.6.57.24.99.39 1.33.5.57.18 1.09.16 1.5.1.46-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+    </svg>
+  </a>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Fotografía ampliada" aria-hidden="true">
+    <div class="lightbox__inner">
+      <button class="lightbox__close" type="button" aria-label="Cerrar vista ampliada">×</button>
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const revealItems = document.querySelectorAll('.reveal');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    const closeLightbox = document.querySelector('.lightbox__close');
+    const updateHeader = () => {
+      if (window.scrollY > 30) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+    };
+
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+      navToggle.textContent = isOpen ? '×' : '☰';
+    });
+
+    navLinks.addEventListener('click', (event) => {
+      const link = event.target.closest('a');
+      if (!link) return;
+      navLinks.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Abrir menú');
+      navToggle.textContent = '☰';
+    });
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.18 });
+
+      revealItems.forEach((item) => observer.observe(item));
+    } else {
+      revealItems.forEach((item) => item.classList.add('visible'));
+    }
+
+    const openLightbox = (src, alt) => {
+      lastFocusedElement = document.activeElement;
+      lightboxImg.src = src;
+      lightboxImg.alt = alt;
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      window.setTimeout(() => closeLightbox.focus({ preventScroll: true }), 0);
+    };
+
+    let lastFocusedElement;
+
+    const closeModal = () => {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      lightboxImg.src = '';
+      lightboxImg.alt = '';
+      if (lastFocusedElement) lastFocusedElement.focus();
+    };
+
+    galleryItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        openLightbox(item.dataset.image, item.dataset.alt);
+      });
+
+      item.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openLightbox(item.dataset.image, item.dataset.alt);
+        }
+      });
+    });
+
+    closeLightbox.addEventListener('click', closeModal);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeModal();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        if (lightbox.classList.contains('open')) closeModal();
+        if (navLinks.classList.contains('is-open')) {
+          navLinks.classList.remove('is-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+          navToggle.setAttribute('aria-label', 'Abrir menú');
+          navToggle.textContent = '☰';
+          navToggle.focus();
+        }
+      }
+
+      if (event.key === 'Tab' && lightbox.classList.contains('open')) {
+        event.preventDefault();
+        closeLightbox.focus();
+      }
+    });
+  </script>
+</body>
+</html>
